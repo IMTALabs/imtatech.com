@@ -14,6 +14,15 @@ class PostsController extends Controller
     {
         $posts = Entry::query()->where('collection', 'posts')->orderBy('updated_at')->paginate(5);
 
+        SEOMeta::setTitle('Bài viết');
+        SEOMeta::setDescription('Cập nhật thông tin mới nhất về IMTA TECH');
+
+        OpenGraph::setDescription('Cập nhật thông tin mới nhất về IMTA TECH');
+        OpenGraph::setTitle('Bài viết');
+        OpenGraph::setUrl(url()->current());
+        OpenGraph::addProperty('type', 'articles');
+        OpenGraph::addImage(asset('assets/images/logo.jpg'));
+
         return view('posts.index', compact('posts'));
     }
 
