@@ -6,11 +6,12 @@ password_hash: $2y$10$tSXwHguhX7Ami/8mOGVXreiljLVQOu4bpaMIFuANpyt32xKJ0njFO
 preferences:
   nav: {  }
   collections:
-    posts:
+    page:
       columns:
         - title
-        - author
-        - slug
-        - status
-        - content
+    posts:
+      columns:
         - thumbnail
+        - title
+        - team
+        - status

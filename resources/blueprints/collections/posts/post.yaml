@@ -12,33 +12,43 @@ tabs:
               required: true
               validate:
                 - required
+              display: 'Tiêu đề bài viết'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
           -
-            handle: category
+            handle: team
             field:
-              placeholder: 'Type and press ↩ Enter'
-              type: taggable
-              display: Category
-              icon: tags
+              options:
+                chung: Chung
+                web: Web
+                mobile: Mobile
+                ai: AI
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Team
+              icon: select
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
           -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
-            handle: description
+            handle: mo_ta
             field:
               character_limit: '200'
               antlers: false
               type: textarea
-              display: Description
+              display: 'Mô tả'
               icon: textarea
               listable: hidden
               instructions_position: above
@@ -46,7 +56,7 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: content
+            handle: noi_dung
             field:
               buttons:
                 - h2
@@ -94,7 +104,7 @@ tabs:
               collapse: false
               previews: true
               type: bard
-              display: Content
+              display: 'Nội dung'
               icon: bard
               listable: hidden
               instructions_position: above

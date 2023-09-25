@@ -15,4 +15,12 @@
     img {
         @apply mb-4;
     }
+
+    p > code {
+        @apply px-1 py-0.5 rounded text-sm bg-gray-50 border border-gray-300 font-[monospace];
+    }
+
+    pre {
+        @apply px-1 py-0.5 rounded text-sm bg-gray-50 border border-gray-300 overflow-auto font-[monospace];
+    }
 }

@@ -10,6 +10,16 @@ tabs:
             field:
               type: text
               required: true
+              validate:
+                - required
+              display: 'Tiêu đề trang'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: slogan
             field:
@@ -24,7 +34,7 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: textarea_field
+            handle: slogan_phu
             field:
               antlers: false
               type: textarea

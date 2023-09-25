@@ -3,10 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>IMTA TECH</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="A fully responsive Tailwind CSS Multipurpose agency, application, business, clean, creative, cryptocurrency, it solutions, startup, career, blog, modern, creative, multipurpose, portfolio, saas, software, tailwind css, etc." name="description" />
-    <meta content="coderthemes" name="author" />
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.webp') }}">
 
     <!-- Theme favicon -->
@@ -25,6 +22,8 @@
 
     <!-- Icons css -->
     <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css">
+
+    {!! SEO::generate() !!}
 </head>
 
 <body class="text-gray-700">

@@ -10,10 +10,8 @@
 
             <div class="relative lg:w-3/5 mx-auto z-30">
                 <div class="text-center">
-                    <h2 class="text-5xl font-semibold mb-8">Blog</h2>
-                    <p class="text-base/relaxed tracking-wide">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit sed consequuntur ratione voluptatem sequi nesciunt.
-                    <p>
+                    <h2 class="text-5xl font-semibold mb-8">Bài viết</h2>
+                    <p class="text-base/relaxed tracking-wide">Cập nhật thông tin mới nhất về IMTA TECH<p>
                 </div>
             </div>
         </div>
@@ -22,25 +20,6 @@
     <!-- =========== listing Section Start =========== -->
     <section class="py-24">
         <div class="container">
-
-            <div class="flex items-center gap-2">
-                <p>Tags:</p>
-                <div class="flex flex-wrap items-center gap-1">
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Business</a>
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Community</a>
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Announcement</a>
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Tutorials</a>
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Resources</a>
-                    <a href="#"
-                       class="border border-gray-300 rounded-md text-xs font-medium tracking-wider transition-all duration-150 hover:shadow-lg focus:shadow-lg py-2 px-3">Interview</a>
-                </div>
-            </div>
-
             @if ($posts->count() > 0)
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-10 items-center lg:py-16 py-14" data-aos="fade-up">
                     @php
@@ -58,21 +37,21 @@
                                     <div>
                                         <span
                                             class="bg-orange-500/10 text-orange-500 font-medium rounded-md text-xs py-1 px-2"><a
-                                                href="#">Community</a></span>
+                                                href="#">{{ $firstPost->team->label() }}</a></span>
                                         <h1 class="text-lg my-3 transition-all hover:text-primary"><a
                                                 href="{{ route('posts.show', ['slug' => $firstPost->slug]) }}">{{ $firstPost->title }}</a></h1>
                                         <p class="text-sm/relaxed tracking-wider text-gray-500">
-                                            {{ $firstPost->description }}
-                                            <a href="{{ route('posts.show', ['slug' => $firstPost->slug]) }}" class="text-primary">read more</a>
+                                            <span class="line-clamp-2">{{ $firstPost->mo_ta }}</span>
+                                            <a href="{{ route('posts.show', ['slug' => $firstPost->slug]) }}" class="text-primary">xem thêm</a>
                                         </p>
                                     </div>
                                     <div>
                                         <div class="flex items-center gap-2">
-                                            <img src="{{ $firstPost->author->avatar->url }}"
+                                            <img src="{{ asset('assets/images/logo.webp') }}"
                                                  class="h-10 w-10 rounded-md object-cover">
                                             <div>
-                                                <h6 class="text-sm transition-all hover:text-primary">{{ $firstPost->author->name }}</h6>
-                                                <p class="text-sm text-gray-500">{{ $firstPost->updated_at->toDateTimeString() }}</p>
+                                                <h6 class="text-sm transition-all hover:text-primary">{{ $firstPost->team->label() }}</h6>
+                                                <p class="text-xs text-gray-500">{{ $firstPost->updated_at->toDateTimeString() }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +98,7 @@
                                         href="{{ route('posts.show', ['slug' => $post->slug]) }}">{{ $post->title }}</a></h1>
                                 <p class="text-sm/relaxed tracking-wider text-gray-500">
                                     {{ $post->description }} ...
-                                    <a href="{{ route('posts.show', ['slug' => $post->slug]) }}" class="text-primary">read more</a>
+                                    <a href="{{ route('posts.show', ['slug' => $post->slug]) }}" class="text-primary">xem thêm</a>
                                 </p>
                             </div>
                         @endforeach
@@ -143,6 +122,8 @@
                         </div>
                     @endif
                 </div>
+            @else
+                <div class="italic text-center text-sm">Hiện không có bài viết nào!</div>
             @endif
         </div>
     </section>
