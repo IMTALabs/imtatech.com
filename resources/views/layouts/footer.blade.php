@@ -23,40 +23,44 @@
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-14 py-6">
             <div>
                 <a href="index.html" class="flex items-center gap-2">
-                    <img src="{{ asset('assets/images/logo.webp') }}" class="h-12">
+                    <img src="{{ asset('assets/images/logo.jpg') }}" class="h-12 rounded-full">
                     <span class="font-medium">IMTA TECH</span>
                 </a>
-                <p class="text-gray-500/80 mt-5 w-4/5">{{ \Artesaos\SEOTools\Facades\SEOMeta::getDescription() }}</p>
+                <p class="text-gray-500/80 mt-5 w-4/5">IMTA TECH JOINT STOCK COMPANY.</p>
+                <p class="text-gray-400 text-xs leading-6">
+                    Tầng 4, Toà văn phòng số 565 Phạm Văn Đồng, Phường Cổ Nhuế 1, Quận Bắc Từ Liêm, Thành phố Hà Nội, Việt Nam.<br>
+                    Mã số doanh nghiệp: 0110458603<br>
+                    Cơ quan cấp: Phòng Đăng ký kinh doanh - Sở Kế hoạch và Đầu tư TP. Hà Nội
+                </p>
             </div>
 
             <div>
                 <div class="flex flex-col sm:flex-row gap-14 flex-wrap sm:flex-nowrap justify-between">
                     <div>
                         <div class="flex flex-col gap-3">
-                            <h5 class="mb-3 uppercase">Platform</h5>
+                            <h5 class="mb-3 uppercase">Nền tảng</h5>
                             <div class="text-gray-500/80"><a href="javascript:void(0);">Demo</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Pricing</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Integrations</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Status</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Bảng giá</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Tích hợp</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Trạng thái</a></div>
                         </div>
                     </div>
 
                     <div>
                         <div class="flex flex-col gap-3">
-                            <h5 class="mb-3 uppercase">Company</h5>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">About us</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Career</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Contact Us</a></div>
+                            <h5 class="mb-3 uppercase">Công ty</h5>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Về chúng tôi</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Cơ hội nghề nghiệp</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Liên hệ</a></div>
                         </div>
                     </div>
 
                     <div>
                         <div class="flex flex-col gap-3">
-                            <h5 class="mb-3 uppercase">Legal</h5>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Usage Policy</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Privacy Policy</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Terms of Service</a></div>
-                            <div class="text-gray-500/80"><a href="javascript:void(0);">Trust</a></div>
+                            <h5 class="mb-3 uppercase">Điều khoản</h5>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Chính sách sử dụng</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Chính sách bảo mật</a></div>
+                            <div class="text-gray-500/80"><a href="javascript:void(0);">Điều khoản dịch vụ</a></div>
                         </div>
                     </div>
                 </div>

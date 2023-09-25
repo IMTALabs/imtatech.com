@@ -5,8 +5,8 @@
         <nav class="flex items-center">
             <!-- Navbar Brand Logo -->
             <a href="{{ route('landing.home') }}" class="flex items-center gap-2">
-                <img src="{{ asset('assets/images/logo.webp') }}" class="h-8 logo-dark" alt="Logo Dark">
-                <img src="{{ asset('assets/images/logo.webp') }}" class="h-8 logo-light" alt="Logo Light">
+                <img src="{{ asset('assets/images/logo.jpg') }}" class="h-10 logo-dark rounded-full" alt="Logo Dark">
+                <img src="{{ asset('assets/images/logo.jpg') }}" class="h-10 logo-light rounded-full" alt="Logo Light">
                 <span class="font-medium">IMTA TECH</span>
             </a>
 
@@ -253,7 +253,7 @@
         <!-- Mobile Menu Topbar Logo (Header) -->
         <div class="p-6 flex items-center justify-between">
             <a href="{{ route('landing.home') }}">
-                <img src="{{ asset('assets/images/logo.webp') }}" class="h-8" alt="Logo">
+                <img src="{{ asset('assets/images/logo.jpg') }}" class="h-8 rounded-full" alt="Logo">
             </a>
 
             <button data-fc-dismiss class="flex items-center px-2">

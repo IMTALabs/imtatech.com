@@ -47,8 +47,8 @@
                                     </div>
                                     <div>
                                         <div class="flex items-center gap-2">
-                                            <img src="{{ asset('assets/images/logo.webp') }}"
-                                                 class="h-10 w-10 rounded-md object-cover">
+                                            <img src="{{ asset('assets/images/logo.jpg') }}"
+                                                 class="h-10 w-10 rounded-full object-cover">
                                             <div>
                                                 <h6 class="text-sm transition-all hover:text-primary">{{ $firstPost->team->label() }}</h6>
                                                 <p class="text-xs text-gray-500">{{ $firstPost->updated_at->toDateTimeString() }}</p>

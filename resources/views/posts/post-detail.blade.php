@@ -36,7 +36,7 @@
             <div class="border-t mb-5"></div>
             <div class="my-5 md:my-0">
                 <div class="flex justify-start items-center gap-4">
-                    <img src="{{ asset('assets/images/logo.webp') }}" class="h-12 w-12 rounded-full">
+                    <img src="{{ asset('assets/images/logo.jpg') }}" class="h-12 w-12 rounded-full">
                     <div>
                         <h6 class="text-sm transition-all hover:text-primary"><a href="#">{{ $post->team->label() }}</a></h6>
                         <p class="text-xs text-gray-500">{{ $post->updated_at->toDatetimeString() }}</p>

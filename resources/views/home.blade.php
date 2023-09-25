@@ -99,14 +99,14 @@
     <div class="container" data-aos="fade-up" data-aos-duration="1500">
         <div class="text-center">
             <span class="text-xs bg-primary/10 text-primary/90 rounded-full px-3 py-1">Giới thiệu</span>
-            <h1 class="text-3xl/tight font-medium mt-3 mb-4">IMTA TECH SOFTWARE</h1>
+            <h1 class="text-3xl/tight font-medium mt-3 mb-4">IMTA TECH JOINT STOCK COMPANY</h1>
         </div>
 
         <div class="pt-16">
             <div class="grid xl:grid-cols-2 grid-cols-1 gap-7">
                 <div>
                     <div class="bg-white flex items-center rounded gap-5 p-5">
-                        <img src="assets/images/brands/slack.png" class="w-16">
+                        <img src="{{ asset('assets/images/hero/wired-flat-187-suitcase.gif') }}" class="w-16">
                         <div>
                             <h1 class="mb-3">Chúng tôi là</h1>
                             <p class="text-gray-500">{{ $data->chung_toi_la }}</p>
@@ -115,7 +115,7 @@
                 </div>
                 <div>
                     <div class="bg-white flex items-center rounded gap-5 p-5">
-                        <img src="assets/images/brands/fb.png" class="w-16">
+                        <img src="{{ asset('assets/images/hero/wired-flat-966-privacy-policy.gif') }}" class="w-16">
                         <div>
                             <h1 class="mb-3">Sứ mệnh</h1>
                             <p class="text-gray-500">{{ $data->su_menh }}</p>
@@ -124,7 +124,7 @@
                 </div>
                 <div>
                     <div class="bg-white flex items-center rounded gap-5 p-5">
-                        <img src="assets/images/brands/salesforce.jpg" class="w-16">
+                        <img src="{{ asset('assets/images/hero/wired-flat-950-attract-customers.gif') }}" class="w-16">
                         <div>
                             <h1 class="mb-3">Vì sao bạn cần chúng tôi</h1>
                             <p class="text-gray-500">{{ $data->vi_sao_ban_can_chung_toi}}</p>
@@ -133,7 +133,7 @@
                 </div>
                 <div>
                     <div class="bg-white flex items-center rounded gap-5 p-5">
-                        <img src="assets/images/brands/at.png" class="w-16">
+                        <img src="{{ asset('assets/images/hero/wired-flat-1021-rules.gif') }}" class="w-16">
                         <div>
                             <h1 class="mb-3">Ưu điểm</h1>
                             <p class="text-gray-500">{{ $data->uu_diem }}</p>

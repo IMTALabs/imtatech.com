@@ -63,7 +63,7 @@ return [
             'url'         => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'WebPage',
             'images'      => [
-                url('/assets/images/logo.webp'),
+                url('/assets/images/logo.jpg'),
             ],
         ],
     ],

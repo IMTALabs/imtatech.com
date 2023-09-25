@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo.webp') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.jpg') }}">
 
     <!-- Theme favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo.webp') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.jpg') }}">
 
     <!--Swiper slider css-->
     <link href="{{ asset('assets/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css">
