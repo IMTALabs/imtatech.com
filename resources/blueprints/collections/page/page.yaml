@@ -1,0 +1,132 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: slogan
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Slogan
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: textarea_field
+            field:
+              antlers: false
+              type: textarea
+              display: 'Slogan phụ'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: dich_vu_web
+            field:
+              antlers: false
+              type: textarea
+              display: 'Dịch vụ web'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: dich_vu_mobile
+            field:
+              antlers: false
+              type: textarea
+              display: 'Dịch vụ mobile'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: dich_vu_ai
+            field:
+              antlers: false
+              type: textarea
+              display: 'Dịch vụ AI'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: chung_toi_la
+            field:
+              antlers: false
+              type: textarea
+              display: 'Chúng tôi là'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: su_menh
+            field:
+              antlers: false
+              type: textarea
+              display: 'Sứ mệnh'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: vi_sao_ban_can_chung_toi
+            field:
+              antlers: false
+              type: textarea
+              display: 'Vì sao bạn cần chúng tôi'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: uu_diem
+            field:
+              antlers: false
+              type: textarea
+              display: 'Ưu điểm'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+title: 'Home Landing'

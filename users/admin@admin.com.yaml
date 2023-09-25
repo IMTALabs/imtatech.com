@@ -1,0 +1,16 @@
+name: quanph
+super: true
+avatar: photo-1592609931095-54a2168ae893.webp
+id: 53441960-b522-42ad-ae58-bc353f7d8ad5
+password_hash: $2y$10$tSXwHguhX7Ami/8mOGVXreiljLVQOu4bpaMIFuANpyt32xKJ0njFO
+preferences:
+  nav: {  }
+  collections:
+    posts:
+      columns:
+        - title
+        - author
+        - slug
+        - status
+        - content
+        - thumbnail

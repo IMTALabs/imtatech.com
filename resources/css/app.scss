@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom
+@import "custom/reboot";
+@import "custom/helper";
+@import "custom/navbar";
+@import "custom/gallery";
+
+// Detail
+.article {
+    @apply py-4 space-y-4;
+
+    img {
+        @apply mb-4;
+    }
+}
