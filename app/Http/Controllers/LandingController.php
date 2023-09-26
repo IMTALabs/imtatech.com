@@ -33,9 +33,17 @@ class LandingController extends Controller
     }
 
     public function web() {
-        SEOMeta::setRobots('noindex nofollow');
+        $data = Entry::whereCollection('page')->where('slug', 'web')->first();
 
-        return view('landing.web');
+        SEOMeta::setTitle($data->title);
+        SEOMeta::setDescription($data->quote_chinh);
+
+        OpenGraph::setDescription($data->quote_chinh);
+        OpenGraph::setTitle($data->title);
+        OpenGraph::setUrl(url()->current());
+        OpenGraph::addProperty('type', 'articles');
+
+        return view('landing.web', compact('data'));
     }
 
     public function ai() {

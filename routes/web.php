@@ -26,3 +26,7 @@ Route::get('/ai', [LandingController::class, 'ai'])->name('landing.ai');
 
 Route::get('/posts', [PostsController::class, 'index'])->name('posts.index');
 Route::get('/posts/{slug}', [PostsController::class, 'show'])->name('posts.show');
+
+Route::get('/about-us', [LandingController::class, 'aboutUs'])->name('landing.about_us');
+Route::get('/contact', [LandingController::class, 'showContact'])->name('landing.contact.show');
+Route::post('/contact', [LandingController::class, 'storeContact'])->name('landing.contact.store');

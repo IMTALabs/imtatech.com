@@ -12,10 +12,456 @@ tabs:
               required: true
               validate:
                 - required
+              display: 'Tiêu đề trang'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: quote_chinh
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Quote chính'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: quote_phu
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Quote phụ'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tip_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Tip 1'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tip_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Tip 2'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: quote_loi_ich
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Quote lợi ích'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: quote_loi_ich_phu
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Quote lợi ích phụ'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: loi_ich_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Lợi ích 1'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: mo_ta_loi_ich_1
+            field:
+              antlers: false
+              type: textarea
+              display: 'Mô tả lợi ích 1'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: loi_ich_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Lợi ích 2'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: mo_ta_loi_ich_2
+            field:
+              antlers: false
+              type: textarea
+              display: 'Mô tả lợi ích 2'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: loi_ich_3
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Lợi ích 3'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: mo_ta_loi_ich_3
+            field:
+              antlers: false
+              type: textarea
+              display: 'Mô tả lợi ích 3'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: uu_diem
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Ưu điểm'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: mo_ta_uu_diem
+            field:
+              antlers: false
+              type: textarea
+              display: 'Mô tả ưu điểm'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: khach_hang_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Khách hàng 1'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: phan_hoi_khach_hang_1
+            field:
+              antlers: false
+              type: textarea
+              display: 'Phản hồi khách hàng 1'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: khach_hang_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Khách hàng 2'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: phan_hoi_khach_hang_2
+            field:
+              antlers: false
+              type: textarea
+              display: 'Phản hồi khách hàng 2'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: khach_hang_3
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Khách hàng 3'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: phan_hoi_khach_hang_3
+            field:
+              antlers: false
+              type: textarea
+              display: 'Phản hồi khách hàng 3'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ten_goi_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Tên gói 1'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: gia_goi_1
+            field:
+              type: integer
+              display: 'Giá gói 1'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: chuc_nang_goi_1
+            field:
+              placeholder: 'Mỗi chức năng viết trên 1 dòng'
+              antlers: false
+              type: textarea
+              display: 'Chức năng gói 1'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ten_goi_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Tên gói 2'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: gia_goi_2
+            field:
+              type: integer
+              display: 'Giá gói 2'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: chuc_nang_goi_2
+            field:
+              antlers: false
+              type: textarea
+              display: 'Chức năng gói 2'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ten_goi_3
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Tên gói 3'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: gia_goi_3
+            field:
+              type: integer
+              display: 'Giá gói 3'
+              icon: integer
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: chuc_nang_goi_3
+            field:
+              antlers: false
+              type: textarea
+              display: 'Chức năng gói 3'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cau_hoi_1
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Câu hỏi 1'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tra_loi_1
+            field:
+              antlers: false
+              type: textarea
+              display: 'Trả lời 1'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cau_hoi_2
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Câu hỏi 2'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tra_loi_2
+            field:
+              antlers: false
+              type: textarea
+              display: 'Trả lời 2'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: cau_hoi_3
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Câu hỏi 3'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: tra_loi_3
+            field:
+              antlers: false
+              type: textarea
+              display: 'Trả lời 3'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
       -
+        display: 'New Section'
         fields:
           -
             handle: slug

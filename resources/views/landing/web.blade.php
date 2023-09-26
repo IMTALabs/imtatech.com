@@ -12,20 +12,13 @@
                         <div class="text-center sm:text-start">
 
                             <h1 class="text-3xl/tight sm:text-4xl/tight lg:text-5xl/tight font-semibold mb-7">
-                                The best way to
-                                <span
-                                    class="relative z-0 after:bg-green-500/50 after:-z-10 after:absolute md:after:h-6 after:h-4 after:w-full after:bottom-0 after:end-0">showcase</span>
-                                your saas
+                                {{ $data->quote_chinh }}
                             </h1>
-                            <p class="sm:text-lg text-gray-500">Make your saas application stand out with high-quality
-                                landing page designed and developed by professional</p>
+                            <p class="sm:text-lg text-gray-500">{{ $data->quote_phu }}</p>
                             <div class="flex gap-3 mt-16">
-                                <input type="email"
-                                       class="inline-block text-sm border border-slate-300 focus:ring-0 rounded shadow-lg sm:shadow-none bg-white w-full py-3 "
-                                       id="Email" aria-describedby="emailHelp" placeholder="Your Email">
-                                <button for="Email"
-                                        class="bg-primary text-white rounded-lg text-sm font-semibold flex-none hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 px-3">
-                                    Sign Up
+                                <button
+                                    class="bg-primary text-white rounded-lg text-sm font-semibold flex-none hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 px-3 h-10">
+                                    Liên hệ ngay
                                 </button>
                             </div>
                             <div class="flex flex-wrap items-center gap-5 mt-5">
@@ -34,14 +27,14 @@
                                          viewBox="0 0 24 24" fill="none">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <p class="text-sm text-gray-700">Free 14-day Demo</p>
+                                    <p class="text-sm text-gray-700">{{ $data->tip_1 }}</p>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <svg class="stroke-green-500 stroke-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 24 24" fill="none">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <p class="text-sm text-gray-700">No credit card needed</p>
+                                    <p class="text-sm text-gray-700">{{ $data->tip_2 }}</p>
                                 </div>
                             </div>
 
@@ -131,10 +124,9 @@
             <div class="container">
 
                 <div class="text-center">
-                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Features</span>
-                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">Better Management. Better Performance</h1>
-                    <p class="text-gray-500">Start working with <span class="text-primary">Prompt</span> to manage your
-                        workforce better</p>
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Tại sao nên chọn IMTA TECH</span>
+                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">{{ $data->quote_loi_ich }}</h1>
+                    <p class="text-gray-500">{{ $data->quote_loi_ich_phu }}</p>
                 </div>
 
                 <div class="xl:pt-16 xl:pb-28 py-16">
@@ -172,17 +164,12 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h1 class="font-medium mb-4 mt-2">Improve Employee Experience</h1>
+                                    <h1 class="font-medium mb-4 mt-2">{{ $data->loi_ich_1 }}</h1>
                                 </button>
                                 <div class="w-full overflow-hidden duration-300 ps-16">
                                     <p class="text-gray-700 dark:text-gray-300">
-                                        Before we dive into why companies must invest in employee experience (EX), it’s
-                                        important to understand what this concept entails.
+                                        {{ $data->mo_ta_loi_ich_1 }}
                                     </p>
-                                    <div class="mt-7 flex items-center">
-                                        <a href="#" class="text-primary">Learn more <i
-                                                class="fa-solid fa-arrow-right ms-2"></i></a>
-                                    </div>
                                 </div>
 
                                 <div class="border-b my-6"></div>
@@ -206,17 +193,12 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h1 class="font-medium mb-4 mt-2">Hiring & Onboarding</h1>
+                                    <h1 class="font-medium mb-4 mt-2">{{ $data->loi_ich_2 }}</h1>
                                 </button>
                                 <div class="hidden w-full overflow-hidden duration-300 ps-16">
                                     <p class="text-gray-700 dark:text-gray-300">
-                                        Post your job, interview candidates and make offers, all on Prompt. Start hiring
-                                        today.
+                                        {{ $data->mo_ta_loi_ich_2 }}
                                     </p>
-                                    <div class="mt-7 flex items-center">
-                                        <a href="#" class="text-primary">Learn more <i
-                                                class="fa-solid fa-arrow-right ms-2"></i></a>
-                                    </div>
                                 </div>
 
                                 <div class="border-b my-6"></div>
@@ -243,17 +225,12 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h1 class="font-medium mb-4 mt-2">People Data & Analytics</h1>
+                                    <h1 class="font-medium mb-4 mt-2">{{ $data->loi_ich_3 }}s</h1>
                                 </button>
                                 <div class="hidden w-full overflow-hidden duration-300 ps-16">
                                     <p class="text-gray-700 dark:text-gray-300">
-                                        Finding committed employees is one of public and private organizations’ top
-                                        priorities.
+                                        {{ $data->mo_ta_loi_ich_3 }}
                                     </p>
-                                    <div class="mt-7 flex items-center">
-                                        <a href="#" class="text-primary">Learn more <i
-                                                class="fa-solid fa-arrow-right ms-2"></i></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -280,14 +257,8 @@
                                 </svg>
                             </div>
 
-                            <h1 class="text-3xl/tight font-medium mt-6 mb-4">Smart Payroll. Paying your people couldn't
-                                be easier</h1>
-                            <p class="text-gray-500">You can modify your pages with drag-dropping , can import demos
-                                with just ” One Click” and can modify theme setting easy-to-use options panel.</p>
-                            <div class="flex items-center mt-12">
-                                <a href="#" class="text-primary">Learn more <i class="fa-solid fa-arrow-right ms-2"></i>
-                                </a>
-                            </div>
+                            <h1 class="text-3xl/tight font-medium mt-6 mb-4">{{ $data->uu_diem }}</h1>
+                            <p class="text-gray-500">{{ $data->mo_ta_uu_diem }}</p>
                         </div>
 
                         <div class="relative order-1 lg:order-2">
@@ -312,59 +283,23 @@
             <div class="container" data-aos="fade-up" data-aos-duration="600">
 
                 <div class="text-center">
-                    <h1 class="text-2xl font-medium">Any many more powerful features</h1>
+                    <h1 class="text-2xl font-medium">Các tính năng nổi bật khác</h1>
                 </div>
 
                 <div class="py-16">
-                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
-                        <div class="order-1">
-                            <div class="flex flex-col gap-5">
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Hire and Retain Top Talent
-                                </p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Team Management</p>
-                            </div>
-                        </div>
-
-                        <div class="order-3 xl:order-2">
-                            <div class="flex flex-col gap-5">
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Stay Compliant</p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Improve Productivity</p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Improve Experience</p>
-                            </div>
-                        </div>
-
-                        <div class="order-4 xl:order-3">
-                            <div class="flex flex-col gap-5">
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Self-service Time Tracking
-                                </p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Performance Management</p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Expert HR</p>
-                            </div>
-                        </div>
-
-                        <div class="order-2 xl:order-4">
-                            <div class="flex flex-col gap-5">
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> New Hire Checklist</p>
-                                <p class="flex items-center gap-3"><i
-                                        class="fa-solid fa-check text-green-500 text-xl"></i> Tax Calculator</p>
-                            </div>
-                        </div>
+                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 justify-center">
+                        @foreach(explode("\n", $data->mo_ta_uu_diem) as $adv)
+                            <p class="flex items-center gap-3"><i
+                                    class="fa-solid fa-check text-green-500 text-xl"></i> {{ $adv }}
+                            </p>
+                        @endforeach
                     </div>
                 </div>
 
                 <button class="flex items-center justify-center mx-auto">
-                    <a href="#"
-                       class="bg-primary text-white rounded-lg text-sm font-semibold flex-none hover:shadow-lg  hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 px-6 py-3">Sign
-                        Up Now <i class="fa-solid fa-arrow-right ms-2"></i> </a>
+                    <a href="{{ route('landing.contact.show') }}"
+                       class="bg-primary text-white rounded-lg text-sm font-semibold flex-none hover:shadow-lg  hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 px-6 py-3">
+                        Liên hệ ngay <i class="fa-solid fa-arrow-right ms-2"></i> </a>
                 </button>
 
             </div>
@@ -384,27 +319,36 @@
             <div class="container" data-aos="fade-up" data-aos-duration="300">
 
                 <div class="text-center">
-                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Clients</span>
-                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">The smart people management you need</h1>
-                    <p class="text-gray-500">21,000+ organizations trust <span class="text-primary">Prompt</span> to
-                        drive perfomance & engagement</p>
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Công nghệ</span>
+                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">Đa dạng công nghệ trong các sản phẩm của công
+                        ty</h1>
+                    <p class="text-gray-500">Một số công nghệ nổi bật</p>
                 </div>
 
                 <div class="flex flex-wrap items-center justify-center lg:gap-24 gap-10 mt-14">
                     <div>
-                        <img src="assets/images/brands/amazon.svg" class="h-8">
+                        <img src="https://bootcamp.laravel.com/img/logomark.min.svg" class="h-8">
                     </div>
                     <div>
-                        <img src="assets/images/brands/google.svg" class="h-8">
+                        <img src="https://img.icons8.com/color/48/vue-js.png" class="h-8">
                     </div>
                     <div>
-                        <img src="assets/images/brands/paypal.svg" class="h-8">
+                        <svg viewBox="-10.5 -9.45 21 18.9" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             class="text-sm me-0 w-8 h-8 text-link dark:text-link-dark flex origin-center transition-all ease-in-out text-[#087ea4]">
+                            <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
+                            <g stroke="currentColor" stroke-width="1" fill="none">
+                                <ellipse rx="10" ry="4.5"></ellipse>
+                                <ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse>
+                                <ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse>
+                            </g>
+                        </svg>
                     </div>
                     <div>
-                        <img src="assets/images/brands/spotify.svg" class="h-8">
+                        <img src="https://laravel-livewire.com/img/twitter.png" class="h-8 rounded-full">
                     </div>
                     <div>
-                        <img src="assets/images/brands/shopify.svg" class="h-8">
+                        <img src="https://img.icons8.com/color/48/tailwindcss.png" class="h-8">
                     </div>
                 </div>
 
@@ -420,9 +364,9 @@
 
             <div class="grid xl:grid-cols-4 grid-cols-3 gap-6">
                 <div class="col-span-3 lg:col-span-1">
-                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Feedback</span>
-                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">What people say</h1>
-                    <p class="text-gray-500">Few valuables words from our customers</p>
+                    <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">Phản hồi</span>
+                    <h1 class="text-3xl/tight font-medium mt-3 mb-4">Khách hàng nói gì</h1>
+                    <p class="text-gray-500">về dịch vụ thiết kế website tại IMTA TECH JOINT STOCK COMPANY.</p>
 
                     <div class="flex gap-4 mt-10">
                         <div class="button-prev text-xl transition-all duration-300 hover:text-primary"><i
@@ -448,16 +392,15 @@
                                 <!-- 1 -->
                                 <div class="swiper-slide p-10 border rounded-xl bg-white shadow">
                                     <i class="fa-solid fa-quote-left text-gray-500 text-5xl"></i>
-                                    <p class="my-4">It is one of the very convenient to use project manager ever! I have
-                                        tried many project management apps for my daily tasks, but this one is far
-                                        better than others. Simply loved it!</p>
+                                    <p class="my-4">{{ $data->phan_hoi_khach_hang_1 }}</p>
                                     <div class="border-b border-gray-200 w-full my-7"></div>
                                     <div class="flex items-center gap-2">
-                                        <img src="assets/images/avatars/img-1.jpg" alt="avatar"
-                                             class="h-10 w-10 rounded-full">
+                                        <img
+                                            src="https://s120-ava-talk.zadn.vn/7/8/e/3/31/120/46d77ccc8df9686fe020e90f576a6f11.jpg"
+                                            alt="avatar"
+                                            class="h-10 w-10 rounded-full">
                                         <div>
-                                            <h1 class="text-sm mb-1">Cersei Lannister</h1>
-                                            <p class="text-gray-500 text-xs">Senior Project Manager</p>
+                                            <h1 class="text-sm mb-1">{{ $data->khach_hang_1 }}</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -465,16 +408,15 @@
                                 <!-- 2 -->
                                 <div class="swiper-slide p-10 border rounded-xl bg-white shadow">
                                     <i class="fa-solid fa-quote-left text-gray-500 text-5xl"></i>
-                                    <p class="my-4">It is one of the very convenient to use project manager ever! I have
-                                        tried many project management apps for my daily tasks, but this one is far
-                                        better than others. Simply loved it!</p>
+                                    <p class="my-4">{{ $data->phan_hoi_khach_hang_2 }}</p>
                                     <div class="border-b border-gray-200 w-full my-7"></div>
                                     <div class="flex items-center gap-2">
-                                        <img src="assets/images/avatars/img-2.jpg" alt="avatar"
-                                             class="h-10 w-10 rounded-full">
+                                        <img
+                                            src="https://s120-ava-talk.zadn.vn/a/5/7/c/7/120/2f6c7070a4e3de1d34ba5b4933caab0e.jpg"
+                                            alt="avatar"
+                                            class="h-10 w-10 rounded-full">
                                         <div>
-                                            <h1 class="text-sm mb-1">Cersei Lannister</h1>
-                                            <p class="text-gray-500 text-xs">Senior Project Manager</p>
+                                            <h1 class="text-sm mb-1">{{ $data->khach_hang_2 }}</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -482,16 +424,15 @@
                                 <!-- 3 -->
                                 <div class="swiper-slide p-10 border rounded-xl bg-white shadow">
                                     <i class="fa-solid fa-quote-left text-gray-500 text-5xl"></i>
-                                    <p class="my-4">It is one of the very convenient to use project manager ever! I have
-                                        tried many project management apps for my daily tasks, but this one is far
-                                        better than others. Simply loved it!</p>
+                                    <p class="my-4">{{ $data->phan_hoi_khach_hang_3 }}</p>
                                     <div class="border-b border-gray-200 w-full my-7"></div>
                                     <div class="flex items-center gap-2">
-                                        <img src="assets/images/avatars/img-3.jpg" alt="avatar"
-                                             class="h-10 w-10 rounded-full">
+                                        <img
+                                            src="https://s120-ava-talk.zadn.vn/0/8/6/e/5/120/a83a617a9cf3be53745d79c017969e9d.jpg"
+                                            alt="avatar"
+                                            class="h-10 w-10 rounded-full">
                                         <div>
-                                            <h1 class="text-sm mb-1">Cersei Lannister</h1>
-                                            <p class="text-gray-500 text-xs">Senior Project Manager</p>
+                                            <h1 class="text-sm mb-1">{{ $data->khach_hang_3 }}</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -515,8 +456,10 @@
             <div class="container relative">
 
                 <div class="text-center">
-                    <h1 class="text-3xl/tight font-medium mb-4">Pricing</h1>
-                    <p class="text-gray-500">Pricing that <span class="text-primary">works </span> for everyone</p>
+                    <h1 class="text-3xl/tight font-medium mb-4">Bảng giá</h1>
+                    <p class="text-gray-500">Báo giá dịch vụ <a class="text-primary"
+                                                                href="https://docs.google.com/spreadsheets/d/1FVFuHfYOs0U9zUK8k6ADMWG2fy5lvrzpVXe4tyqa6Y4/edit#gid=0"
+                                                                target="_blank">thiết kế website </a></p>
                 </div>
 
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 mt-14">
@@ -525,30 +468,22 @@
                         <div
                             class="transition-all duration-300 pointer-events-auto hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] hover:-translate-y-1">
                             <div class="border border-gray-300 bg-white rounded w-full h-full text-center p-5">
-                                <span class="text-lg text-primary">Starter</span>
-                                <h1 class="text-3xl/tight font-semibold mt-3"><sup
-                                        class="text-gray-500 text-sm font-normal">$</sup> 49 <sub
-                                        class="text-gray-500 text-sm font-normal">/month</sub></h1>
+                                <span class="text-lg text-primary">{{ $data->ten_goi_1 }}</span>
+                                <h1 class="text-3xl/tight font-semibold mt-3">từ {{ number_format($data->gia_goi_1) }}
+                                    <sup
+                                        class="text-gray-500 text-sm font-normal">VND</sup></h1>
                                 <div class="border-b border-gray-200 w-full my-7"></div>
                                 <div>
                                     <div class="flex flex-col gap-4">
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Up to 600 minutes
-                                            usage time</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Use for personal
-                                            only</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Add up to 10
-                                            attendees</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Technical support
-                                            via email</p>
+                                        @foreach(explode("\n", $data->chuc_nang_goi_1) as $feat)
+                                            <p class="flex items-center text-gray-600 gap-4"><i
+                                                    class="fa-solid fa-check text-green-500 text-lg"></i> {{ $feat }}</p>
+                                        @endforeach
                                     </div>
                                     <div class="flex mt-[120px]">
-                                        <a href="#"
-                                           class="bg-primary/10 text-primary/90 w-full py-3 rounded-lg border border-transparent hover:border hover:border-primary/20 transition-all duration-300">Purchase
-                                            Now</a>
+                                        <a href="{{ route('landing.contact.show') }}"
+                                           class="bg-primary/10 text-primary/90 w-full py-3 rounded-lg border border-transparent hover:border hover:border-primary/20 transition-all duration-300">Liên
+                                            hệ ngay</a>
                                     </div>
                                 </div>
                             </div>
@@ -560,32 +495,22 @@
                         <div
                             class="transition-all duration-300 pointer-events-auto hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] hover:-translate-y-1">
                             <div class="border border-gray-300 bg-white rounded w-full h-full text-center p-5">
-                                <span class="text-lg text-primary">Professional</span>
-                                <h1 class="text-3xl/tight font-semibold mt-3"><sup
-                                        class="text-gray-500 text-sm font-normal">$</sup> 99 <sub
-                                        class="text-gray-500 text-sm font-normal">/month</sub></h1>
+                                <span class="text-lg text-primary">{{ $data->ten_goi_2 }}</span>
+                                <h1 class="text-3xl/tight font-semibold mt-3">từ {{ number_format($data->gia_goi_2) }}
+                                    <sup
+                                        class="text-gray-500 text-sm font-normal">VND</sup></h1>
                                 <div class="border-b border-gray-200 w-full my-7"></div>
                                 <div>
                                     <div class="flex flex-col gap-4">
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Up to 6000 minutes
-                                            usage time</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Use for personal or
-                                            a commercial</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Add up to 100
-                                            attendees</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Up to 5 teams</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Technical support
-                                            via email</p>
+                                        @foreach(explode("\n", $data->chuc_nang_goi_2) as $feat)
+                                            <p class="flex items-center text-gray-600 gap-4"><i
+                                                    class="fa-solid fa-check text-green-500 text-lg"></i> {{ $feat }}</p>
+                                        @endforeach
                                     </div>
-                                    <div class="flex mt-20">
-                                        <a href="#"
-                                           class="bg-primary text-white w-full py-3 rounded-lg border border-transparent hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 hover:border hover:border-primary transition-all duration-300">Purchase
-                                            Now</a>
+                                    <div class="flex mt-[120px]">
+                                        <a href="{{ route('landing.contact.show') }}"
+                                           class="bg-primary text-white w-full py-3 rounded-lg border border-transparent hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 hover:border hover:border-primary transition-all duration-300">Liên
+                                            hệ ngay</a>
                                     </div>
                                 </div>
                             </div>
@@ -597,33 +522,22 @@
                         <div
                             class="transition-all duration-300 pointer-events-auto hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] hover:-translate-y-1">
                             <div class="border border-gray-300 bg-white rounded w-full h-full text-center p-5">
-                                <span class="text-lg text-primary">Enterprise</span>
-                                <h1 class="text-3xl/tight font-semibold mt-3"><sup
-                                        class="text-gray-500 text-sm font-normal">$</sup> 599 <sub
-                                        class="text-gray-500 text-sm font-normal">/month</sub></h1>
+                                <span class="text-lg text-primary">{{ $data->ten_goi_3 }}</span>
+                                <h1 class="text-3xl/tight font-semibold mt-3">từ {{ number_format($data->gia_goi_3) }}
+                                    <sup
+                                        class="text-gray-500 text-sm font-normal">VND</sup></h1>
                                 <div class="border-b border-gray-200 w-full my-7"></div>
                                 <div>
                                     <div class="flex flex-col gap-4">
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Unlimited usage
-                                            time</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Use for personal or
-                                            a commercial</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Add Unlimited
-                                            attendees</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>24x7 Technical
-                                            support via phone</p>
-                                        <p class="flex items-center text-gray-600 gap-4"><i
-                                                class="fa-solid fa-check text-green-500 text-lg"></i>Technical support
-                                            via email</p>
+                                        @foreach(explode("\n", $data->chuc_nang_goi_3) as $feat)
+                                            <p class="flex items-center text-gray-600 gap-4"><i
+                                                    class="fa-solid fa-check text-green-500 text-lg"></i> {{ $feat }}</p>
+                                        @endforeach
                                     </div>
-                                    <div class="flex mt-20">
-                                        <a href="#"
-                                           class="bg-primary/10 text-primary/90 w-full py-3 rounded-lg border border-transparent hover:border hover:border-primary/20 transition-all duration-300">Purchase
-                                            Now</a>
+                                    <div class="flex mt-[120px]">
+                                        <a href="{{ route('landing.contact.show') }}"
+                                           class="bg-primary/10 text-primary/90 w-full py-3 rounded-lg border border-transparent hover:border hover:border-primary/20 transition-all duration-300">Liên
+                                            hệ ngay</a>
                                     </div>
                                 </div>
                             </div>
@@ -647,8 +561,8 @@
 
             <div class="text-center">
                 <span class="text-sm font-medium py-1 px-3 rounded-full text-primary bg-primary/10">FAQs</span>
-                <h1 class="text-3xl/tight font-medium mt-3 mb-4">Frequently Asked Questions</h1>
-                <p class="text-gray-500">Here are some of the basic types of questions for our customers</p>
+                <h1 class="text-3xl/tight font-medium mt-3 mb-4">Câu hỏi thường gặp</h1>
+                <p class="text-gray-500">Một số câu hỏi hay gặp từ phía khách hàng của chúng tôi</p>
             </div>
 
             <div data-fc-type="accordion" class="mt-14 lg:w-3/4 lg:mx-auto 2xl:w-2/3">
@@ -657,15 +571,14 @@
                     <bu p-5tton
                         class="inline-flex p-5 items-center justify-between w-full font-semibold text-left transition"
                         data-fc-type="collapse">
-                        Can I use this template for my client?
+                        {{ $data->cau_hoi_1 }}
                         <span class="material-symbols-rounded text-xl block transition-all fc-collapse-open:rotate-180">
                             <i class="fa-solid fa-angle-down"></i>
                         </span>
                     </bu>
                     <div class="w-full overflow-hidden transition-[height] duration-300">
                         <p class="text-gray-700 dark:text-gray-300 pt-3 p-5">
-                            Yup, the marketplace license allows you to use this theme in any end products. For more
-                            information on licenses, please refere license terms on marketplace.
+                            {{ $data->tra_loi_1 }}
                         </p>
                     </div>
                 </div>
@@ -675,15 +588,14 @@
                     <button
                         class="p-5 inline-flex items-center justify-between w-full font-semibold text-left transition"
                         data-fc-type="collapse">
-                        Can this theme work with WordPress?
+                        {{ $data->cau_hoi_2 }}
                         <span class="material-symbols-rounded text-xl block transition-all fc-collapse-open:rotate-180">
                             <i class="fa-solid fa-angle-down"></i>
                         </span>
                     </button>
                     <div class="hidden w-full overflow-hidden transition-[height] duration-300">
                         <p class="text-gray-700 dark:text-gray-300 pt-3 p-5">
-                            No. This is a HTML template. It won't directly with WordPress, though you can convert this
-                            into WordPress compatible theme.
+                            {{ $data->tra_loi_2 }}
                         </p>
                     </div>
                 </div>
@@ -693,41 +605,23 @@
                     <button
                         class="p-5 inline-flex items-center justify-between w-full font-semibold text-left transition"
                         data-fc-type="collapse">
-                        How do I get help with the theme?
+                        {{ $data->cau_hoi_3 }}
                         <span class="material-symbols-rounded text-xl block transition-all fc-collapse-open:rotate-180">
                             <i class="fa-solid fa-angle-down"></i>
                         </span>
                     </button>
                     <div class="hidden w-full overflow-hidden transition-[height] duration-300">
                         <p class="text-gray-700 dark:text-gray-300 pt-3 p-5">
-                            Use our dedicated support email (support@coderthemes.com) to send your issues or feedback.
-                            We are here to help anytime.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 4 -->
-                <div class="border border-gray-300 rounded-lg mt-4">
-                    <button
-                        class="p-5 inline-flex items-center justify-between w-full font-semibold text-left transition"
-                        data-fc-type="collapse">
-                        Will you regularly give updates of Prompt ?
-                        <span class="material-symbols-rounded text-xl block transition-all fc-collapse-open:rotate-180">
-                            <i class="fa-solid fa-angle-down"></i>
-                        </span>
-                    </button>
-                    <div class="hidden w-full overflow-hidden transition-[height] duration-300">
-                        <p class="text-gray-700 dark:text-gray-300 pt-3 p-5">
-                            Yes, We will update the Prompt regularly. All the future updates would be available without
-                            any cost.
+                            {{ $data->tra_loi_3 }}
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-14">
-                <p class="inline-flex flex-wrap gap-1 bg-gray-100 text-sm rounded-lg py-2 px-5">Still have unanswered
-                    questions?<a href="#" class="hover:text-primary transition-all"> Contact Us</a></p>
+                <p class="inline-flex flex-wrap gap-1 bg-gray-100 text-sm rounded-lg py-2 px-5">Bạn vẫn còn thắc mắc
+                    khác?<a href="{{ route('landing.contact.show') }}" class="text-primary">
+                        Liên hệ với chúng tôi ngay</a></p>
             </div>
 
         </div>

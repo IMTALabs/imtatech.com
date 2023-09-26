@@ -18,18 +18,40 @@
                         <a class="nav-link" href="{{ route('landing.home') }}">Trang chủ</a>
                     </li>
 
-                    @if(false)
-                        <!-- Home Page Dropdown -->
-                        <li class="nav-item">
-                            <a href="javascript:void(0);"
-                               class="nav-link after:absolute hover:after:-bottom-10 after:inset-0"
-                               data-fc-type="dropdown" data-fc-trigger="hover" data-fc-target="landingDropdownMenu"
-                               data-fc-placement="bottom">
-                                Dịch vụ <i class="fa-solid fa-angle-down ms-2 align-middle"></i>
-                            </a>
+                    <!-- Home Page Dropdown -->
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"
+                           class="nav-link after:absolute hover:after:-bottom-10 after:inset-0"
+                           data-fc-type="dropdown" data-fc-trigger="hover" data-fc-target="landingDropdownMenu"
+                           data-fc-placement="bottom">
+                            Dịch vụ <i class="fa-solid fa-angle-down ms-2 align-middle"></i>
+                        </a>
 
-                            <div id="landingDropdownMenu"
-                                 class="hidden opacity-0 mt-4 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 w-72 fc-dropdown-open:grid gap-1.5">
+                        <div id="landingDropdownMenu"
+                             class="hidden opacity-0 mt-4 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 w-72 fc-dropdown-open:grid gap-1.5">
+                            <div class="nav-item">
+                                <a class="nav-link" href="{{ route('landing.web') }}">
+                                    <div class="flex items-center -ms-1.5">
+                                            <span
+                                                class="bg-green-500/20 flex justify-center items-center w-8 h-8 shadow rounded me-3">
+                                                <svg class="text-green-500 w-6 h-6" viewBox="0 0 24 24" version="1.1"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                                                        <path
+                                                            d="M6,8 L6,16 L18,16 L18,8 L6,8 Z M20,16 L21.381966,16 C21.7607381,16 22.1070012,16.2140024 22.2763932,16.5527864 L22.5,17 C22.6706654,17.3413307 22.5323138,17.7563856 22.190983,17.927051 C22.0950363,17.9750244 21.9892377,18 21.881966,18 L2.11803399,18 C1.73641461,18 1.42705098,17.6906364 1.42705098,17.309017 C1.42705098,17.2017453 1.45202663,17.0959467 1.5,17 L1.7236068,16.5527864 C1.89299881,16.2140024 2.23926193,16 2.61803399,16 L4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 Z"
+                                                            id="Combined-Shape" fill="currentColor"></path>
+                                                        <polygon id="Combined-Shape" fill="currentColor" opacity="0.3"
+                                                                 points="6 8 6 16 18 16 18 8"></polygon>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        <div class="flex-grow-1">Thiết kế website</div>
+                                    </div>
+                                </a>
+                            </div>
+                            @if(false)
                                 <div class="nav-item">
                                     <a class="nav-link" href="{{ route('landing.mobile') }}">
                                         <div class="flex items-center -ms-1.5">
@@ -57,28 +79,6 @@
                                     </a>
                                 </div>
                                 <div class="nav-item">
-                                    <a class="nav-link" href="{{ route('landing.web') }}">
-                                        <div class="flex items-center -ms-1.5">
-                                            <span
-                                                class="bg-green-500/20 flex justify-center items-center w-8 h-8 shadow rounded me-3">
-                                                <svg class="text-green-500 w-6 h-6" viewBox="0 0 24 24" version="1.1"
-                                                     xmlns="http://www.w3.org/2000/svg"
-                                                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                        <rect id="bound" x="0" y="0" width="24" height="24"></rect>
-                                                        <path
-                                                            d="M6,8 L6,16 L18,16 L18,8 L6,8 Z M20,16 L21.381966,16 C21.7607381,16 22.1070012,16.2140024 22.2763932,16.5527864 L22.5,17 C22.6706654,17.3413307 22.5323138,17.7563856 22.190983,17.927051 C22.0950363,17.9750244 21.9892377,18 21.881966,18 L2.11803399,18 C1.73641461,18 1.42705098,17.6906364 1.42705098,17.309017 C1.42705098,17.2017453 1.45202663,17.0959467 1.5,17 L1.7236068,16.5527864 C1.89299881,16.2140024 2.23926193,16 2.61803399,16 L4,16 L4,8 C4,6.8954305 4.8954305,6 6,6 L18,6 C19.1045695,6 20,6.8954305 20,8 L20,16 Z"
-                                                            id="Combined-Shape" fill="currentColor"></path>
-                                                        <polygon id="Combined-Shape" fill="currentColor" opacity="0.3"
-                                                                 points="6 8 6 16 18 16 18 8"></polygon>
-                                                    </g>
-                                                </svg>
-                                            </span>
-                                            <div class="flex-grow-1">Website</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="nav-item">
                                     <a class="nav-link" href="{{ route('landing.ai') }}">
                                         <div class="flex items-center -ms-1.5">
                                             <span
@@ -102,129 +102,29 @@
                                         </div>
                                     </a>
                                 </div>
+                            @endif
+                        </div>
+                    </li>
+
+                    <!-- Inner Page Dropdown -->
+                    <li class="nav-item">
+                        <a href="javascript:void(0);"
+                           class="nav-link after:absolute hover:after:-bottom-10 after:inset-0"
+                           data-fc-trigger="hover" data-fc-target="innerPageDropdownMenu" data-fc-type="dropdown"
+                           data-fc-placement="bottom">
+                            Liên kết <i class="fa-solid fa-angle-down ms-2 align-middle"></i>
+                        </a>
+
+                        <div id="innerPageDropdownMenu"
+                             class="hidden opacity-0 mt-4 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 w-48 space-y-1.5">
+                            <div class="nav-item">
+                                <a class="nav-link" href="#">Về chúng tôi</a>
                             </div>
-                        </li>
-
-                        <!-- Inner Page Dropdown -->
-                        <li class="nav-item">
-                            <a href="javascript:void(0);"
-                               class="nav-link after:absolute hover:after:-bottom-10 after:inset-0"
-                               data-fc-trigger="hover" data-fc-target="innerPageDropdownMenu" data-fc-type="dropdown"
-                               data-fc-placement="bottom">
-                                Liên kết <i class="fa-solid fa-angle-down ms-2 align-middle"></i>
-                            </a>
-
-                            <div id="innerPageDropdownMenu"
-                                 class="hidden opacity-0 mt-4 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 w-48 space-y-1.5">
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link after:absolute after:inset-0 after:-end-10" data-fc-offset="8"
-                                       data-fc-placement="right-start" data-fc-trigger="hover" data-fc-type="dropdown"
-                                       type="button">
-                                        Account <i class="fa-solid fa-angle-right ms-auto align-middle"></i>
-                                    </a>
-
-                                    <div
-                                        class="ms-2 hidden w-48 opacity-0 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 space-y-1.5">
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-dashboard.html">Dashboard</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-settings.html">Settings</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-login.html">Login</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-signup.html">Sign Up</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-forget-password.html">Forget Password</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="account-confirm.html">Confirm Account</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link after:absolute after:inset-0 after:-end-10" data-fc-offset="8"
-                                       data-fc-placement="right-start" data-fc-trigger="hover" data-fc-type="dropdown"
-                                       type="button">
-                                        Blog <i class="fa-solid fa-angle-right ms-auto align-middle"></i>
-                                    </a>
-
-                                    <div
-                                        class="ms-2 hidden w-48 opacity-0 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 space-y-1.5">
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="blog.html">Blog</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="blog-post.html">Blog Post</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr class="-mx-2 my-2">
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link" href="company.html">Company</a>
-                                </div>
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link" href="career.html">Career</a>
-                                </div>
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link" href="pricing.html">Pricing</a>
-                                </div>
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link after:absolute after:inset-0 after:-end-10" data-fc-offset="8"
-                                       data-fc-placement="right-start" data-fc-trigger="hover" data-fc-type="dropdown"
-                                       type="button">
-                                        Portfolio <i class="fa-solid fa-angle-right ms-auto align-middle"></i>
-                                    </a>
-
-                                    <div
-                                        class="ms-2 hidden w-48 opacity-0 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 space-y-1.5">
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="portfolio-grid.html">Portfolio Grid</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="portfolio-masonry.html">Portfolio Masonry</a>
-                                        </div>
-
-                                        <div class="nav-item">
-                                            <a class="nav-link" href="portfolio-item.html">Portfolio Item</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr class="-mx-2 my-2">
-
-                                <!-- Dropdown item -->
-                                <div class="nav-item">
-                                    <a class="nav-link" href="help.html">Help</a>
-                                </div>
-                            </div>
-                        </li>
-                    @endif
+                        </div>
+                    </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/posts">Bài viết</a>
+                        <a class="nav-link" href="{{ route('posts.index') }}">Bài viết</a>
                     </li>
                 </ul>
             </div>
@@ -269,84 +169,43 @@
                     <a href="{{ route('landing.home') }}" class="nav-link">Trang chủ</a>
                 </li>
 
-                @if(false)
-                    <!-- Landing Page -->
-                    <li class="nav-item">
-                        <a href="javascript:void(0)" data-fc-type="collapse" class="nav-link">
-                            Landing <i
-                                class="fa-solid fa-angle-down ms-auto align-middle transition-all fc-collapse-open:rotate-180"></i>
-                        </a>
+                <!-- Landing Page -->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" data-fc-type="collapse" class="nav-link">
+                        Dịch vụ <i
+                            class="fa-solid fa-angle-down ms-auto align-middle transition-all fc-collapse-open:rotate-180"></i>
+                    </a>
 
-                        <ul class="hidden overflow-hidden transition-[height] duration-300 space-y-2">
-                            <li class="nav-item mt-2">
-                                <a class="nav-link" href="home-app.html">App</a>
+                    <ul class="hidden overflow-hidden transition-[height] duration-300 space-y-2">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="home-app.html">Thiết kế website</a>
+                        </li>
+
+                        @if(false)
+                            <li class="nav-item">
+                                <a class="nav-link" href="home-saas.html">Ứng dụng di động</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="home-saas.html">Saas Modern</a>
+                                <a class="nav-link" href="home-saas2.html">AI Chatbot</a>
                             </li>
+                        @endif
+                    </ul>
+                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-saas2.html">Saas Classic</a>
-                            </li>
+                <!-- Inner Page -->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" data-fc-type="collapse" class="nav-link">
+                        Liên kết <i
+                            class="fa-solid fa-angle-down ms-auto align-middle transition-all fc-collapse-open:rotate-180"></i>
+                    </a>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-startup.html">Startup</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-software.html">Software</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-agency.html">Agency</a>
-                            </li>
-
-                            <li class="nav-item">
-
-                                <a class="nav-link" href="home-coworking.html">Coworking</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-crypto.html">Crypto</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-marketing.html">Marketing</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="home-portfolio.html">Portfolio</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Inner Page -->
-                    <li class="nav-item">
-                        <a href="javascript:void(0)" data-fc-type="collapse" class="nav-link">
-                            Pages <i
-                                class="fa-solid fa-angle-down ms-auto align-middle transition-all fc-collapse-open:rotate-180"></i>
-                        </a>
-
-                        <ul class="hidden overflow-hidden transition-[height] duration-300 space-y-2">
-                            <li class="nav-item mt-2">
-                                <a class="nav-link" href="company.html">Company</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="career.html">Career</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Pricing</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="help.html">Help</a>
-                            </li>
-                        </ul>
-                    </li>
-                @endif
+                    <ul class="hidden overflow-hidden transition-[height] duration-300 space-y-2">
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="#">Về chúng tôi</a>
+                        </li>
+                    </ul>
+                </li>
 
                 <!-- Blog Page -->
                 <li class="nav-item">

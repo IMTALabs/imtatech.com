@@ -44,7 +44,7 @@
                     <h1 class="text-3xl/tight font-medium mt-3 mb-4">Thiết kế website</h1>
                     <p class="text-gray-500">{{ $data->dich_vu_web }}</p>
                     <button class="mt-12 flex items-center">
-                        <a href="#" class="border border-primary text-primary rounded-md hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 transition-all duration-500 py-2 px-4">Tìm hiểu thêm <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="{{ route('landing.web') }}" class="border border-primary text-primary rounded-md hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/30 focus:shadow-none focus:outline focus:outline-primary/40 transition-all duration-500 py-2 px-4">Tìm hiểu thêm <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </button>
                 </div>
 
