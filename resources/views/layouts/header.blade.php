@@ -118,7 +118,7 @@
                         <div id="innerPageDropdownMenu"
                              class="hidden opacity-0 mt-4 fc-dropdown-open:opacity-100 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all bg-white rounded-lg shadow-lg border p-2 w-48 space-y-1.5">
                             <div class="nav-item">
-                                <a class="nav-link" href="#">Về chúng tôi</a>
+                                <a class="nav-link" href="{{ route('landing.about_us') }}">Về chúng tôi</a>
                             </div>
                         </div>
                     </li>

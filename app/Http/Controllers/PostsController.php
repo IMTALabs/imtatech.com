@@ -12,7 +12,11 @@ class PostsController extends Controller
 {
     public function index()
     {
-        $posts = Entry::query()->where('collection', 'posts')->orderBy('updated_at')->paginate(5);
+        $posts = Entry::query()
+            ->where('collection', 'posts')
+            ->whereIn('status', ['published', 'scheduled'])
+            ->orderBy('updated_at')
+            ->paginate(5);
 
         SEOMeta::setTitle('Bài viết');
         SEOMeta::setDescription('Cập nhật thông tin mới nhất về IMTA TECH');

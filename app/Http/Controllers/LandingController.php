@@ -26,13 +26,15 @@ class LandingController extends Controller
         return view('home', compact('data'));
     }
 
-    public function mobile() {
+    public function mobile()
+    {
         SEOMeta::setRobots('noindex nofollow');
 
         return view('landing.mobile');
     }
 
-    public function web() {
+    public function web()
+    {
         $data = Entry::whereCollection('page')->where('slug', 'web')->first();
 
         SEOMeta::setTitle($data->title);
@@ -46,9 +48,17 @@ class LandingController extends Controller
         return view('landing.web', compact('data'));
     }
 
-    public function ai() {
+    public function ai()
+    {
         SEOMeta::setRobots('noindex nofollow');
 
         return view('landing.ai');
+    }
+
+    public function aboutUs()
+    {
+        SEOMeta::setTitle('Về chúng tôi');
+
+        return view('landing.about-us');
     }
 }

@@ -39,6 +39,9 @@
     </button>
     <!-- =========== Back To Top End =========== -->
 
+    <!-- Jarallax Plugin Js -->
+    <script src="{{ asset('assets/libs/jarallax/jarallax.min.js') }}"></script>
+
     <!-- Frost Plugin Js -->
     <script src="{{ asset('assets/libs/@frostui/tailwindcss/frostui.js') }}"></script>
 
